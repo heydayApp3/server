@@ -1,0 +1,56 @@
+<!-- profile.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" type="text/css" href="/style.css"> <!-- Assuming your CSS file is in the public directory -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+        <div class="user-info">
+            <p><strong>Username:</strong> <%= username %></p>
+            <p><strong>Email:</strong> <%= email %></p>
+        </div>
+        <form action="/logout" method="POST">
+            <button>Logout</button>
+        </form>
+    </div>
+</body>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    p {
+        color: #666;
+    }
+
+    .user-info {
+        margin-top: 20px;
+    }
+
+    .user-info p {
+        font-size: 18px;
+    }
+</style>
+
+</html>
